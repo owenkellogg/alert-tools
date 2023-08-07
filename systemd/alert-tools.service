@@ -1,0 +1,13 @@
+[Unit]
+Description=Owen Kellogg Alert Tools
+After=network.target
+
+[Service]
+User=your_username
+Group=your_group
+WorkingDirectory=/etc/alert-tools
+ExecStart=/usr/bin/alert-tools
+
+[Install]
+WantedBy=multi-user.target
+
