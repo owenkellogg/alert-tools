@@ -9,10 +9,9 @@ import (
 )
 
 
-func SendRocketChatAlert() {
+func SendRocketChatAlert(msg string) {
 
   rocketChatURL := os.Getenv("ROCKET_CHAT_URL")
-	msg := "No new deposits within one hour after the latest invoice!"
 	payload := []byte(fmt.Sprintf(`{"text": "%s"}`, msg))
 
 	// Make a POST request to Rocket.Chat webhook URL
