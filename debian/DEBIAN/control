@@ -1,0 +1,6 @@
+Package: alert-tools
+Version: 0.1
+Architecture: amd64
+Maintainer: kellogg.owen@proton.me
+Description: Tools for Alerting When Nothing Happens
+
